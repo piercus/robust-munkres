@@ -31,6 +31,29 @@
       "@semantic-release/git"
     ]
   },
+   "xo": {
+    "rules": {
+      "unicorn/no-array-reduce": 0,
+      "no-multi-assign": 0,
+      "unicorn/no-reduce": 0,
+      "import/no-unresolved": 0,
+      "ava/prefer-async-await": 0,
+      "ava/no-skip-test": 1,
+      "camelcase": [
+        0,
+        {
+          "ignoreDestructuring": true
+        }
+      ],
+      "valid-jsdoc": [
+        1,
+        {
+          "requireParamDescription": false,
+          "requireReturnDescription": false
+        }
+      ]
+    }
+  },
   "author": "Pierre Colle <piercus@gmail.com>",
   "license": "ISC",
   "bugs": {
