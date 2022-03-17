@@ -1,0 +1,48 @@
+{
+  "name": "robust-munkres",
+  "version": "1.0.0",
+  "description": "Robust Munkres",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piercus/robust-munkres.git"
+  },
+  "keywords": [
+    "munkres",
+    "threshold",
+    "thresh",
+    "shadow",
+    "robust",
+    "assignement",
+    "outliers"
+  ],
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
+  "author": "Pierre Colle <piercus@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piercus/robust-munkres/issues"
+  },
+  "homepage": "https://github.com/piercus/robust-munkres#readme",
+  "devDependencies": {
+    "ava": "^4.1.0",
+    "semantic-release": "^19.0.2",
+    "xo": "^0.48.0"
+  },
+  "dependencies": {
+    "munkres-js": "^1.2.2"
+  }
+}
