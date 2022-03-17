@@ -31,9 +31,12 @@
       "@semantic-release/git"
     ]
   },
-   "xo": {
+  "xo": {
     "rules": {
       "unicorn/no-array-reduce": 0,
+      "unicorn/prefer-module": 0,
+      "unicorn/no-array-callback-reference": 0,
+      "unicorn/no-new-array": 0,
       "no-multi-assign": 0,
       "unicorn/no-reduce": 0,
       "import/no-unresolved": 0,
