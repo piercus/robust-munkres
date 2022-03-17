@@ -12,18 +12,17 @@ The algorithm comes from Ergys Ristani1, Francesco Solera2, Roger S. Zou1, Rita 
 
 Let's consider the following situation
 
-![./problem.png]
+![problem.png](https://github.com/piercus/robust-munkres/blob/main/problem.png?raw=true)
 
 The normal munkres algorithm will assign it like
 
-![./munkres.png]
+![munkres.png](https://github.com/piercus/robust-munkres/blob/main/munkres.png?raw=true)
 
 This is related to the 'outliers', we have 1 person outlier and one task outlier, which should not be assigned to anyone.
 
 But a better assignement (visually) is to do 
 
-![./munkres-thresh.png]
-
+![munkres-thresh.png](https://github.com/piercus/robust-munkres/blob/main/munkres-thresh.png?raw=true)
 
 In order to get this asisgnement, we consider that it is better to alone rather than in bad company.
 
