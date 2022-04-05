@@ -17,13 +17,15 @@ test('munkres-thresh 2', t => {
 		{x: -3.778_986_717_254_156_2, y: -10.326_655_081_473_291, id: 6},
 	];
 
-	const {cost, match} = munkresThresh(
+	const {cost, match, noMatch} = munkresThresh(
 		people,
 		tasks,
 		options,
 	);
 	t.is(match.length, 0);
-
+	t.is(noMatch.length, 2);
+	t.is(noMatch[0].length, 1);
+	t.is(noMatch[1].length, 1);
 	t.is(cost, threshold);
 });
 
